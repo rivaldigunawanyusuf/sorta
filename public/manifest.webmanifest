@@ -1,0 +1,19 @@
+{
+  "name": "SORTA Smart Waste Kiosk",
+  "short_name": "SORTA",
+  "description": "Smart Waste Sorting Kiosk dan Bank Sampah Digital untuk komunitas RT/RW.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F2F4F7",
+  "theme_color": "#F2F4F7",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

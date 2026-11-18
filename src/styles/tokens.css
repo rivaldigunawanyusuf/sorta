@@ -1,0 +1,177 @@
+:root {
+  color-scheme: light;
+
+  /* Samsung One UI Inspired Clean Light Palette */
+  --bg-canvas: #f2f4f7;
+  --bg-panel: #ffffff;
+  --bg-subtle: #eef1f6;
+  --bg-elevated: #e4e8ef;
+  --bg-recessed: #eaedf3;
+  --bg-hud-scrim: rgba(255, 255, 255, 0.96);
+  --bg-video-chip: rgba(15, 23, 42, 0.86);
+  --text-video-chip: #ffffff;
+
+  --border-hairline: rgba(15, 23, 42, 0.08);
+  --border-control: #858c97;
+  --border-strong: #475569;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-on-solid: #ffffff;
+
+  --signal-emerald: #047857;
+  --signal-emerald-hover: #065f46;
+  --bg-bin-emerald: #e6f6f0;
+
+  --signal-amber: #b45309;
+  --signal-amber-hover: #92400e;
+  --signal-amber-text: #92400e;
+  --bg-bin-amber: #fffbeb;
+  --bg-pill-amber: #fef3c7;
+
+  --signal-crimson: #be123c;
+  --signal-crimson-text: #be123c;
+  --bg-bin-crimson: #fff1f2;
+
+  --role-manager-text: #1e40af;
+  --role-manager-bg: #eff6ff;
+
+  --accent-primary: #0f172a;
+  --accent-primary-hover: #1e293b;
+  --slider-track: #cbd5e1;
+  --slider-fill: #047857;
+  --slider-thumb: #ffffff;
+
+  --shadow-card: 0 2px 10px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --shadow-hud: 0 12px 28px rgba(15, 23, 42, 0.1);
+  --shadow-bottom-nav: 0 -4px 20px rgba(15, 23, 42, 0.06);
+  --backdrop-dialog: rgba(15, 23, 42, 0.45);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --target-size: 42px;
+  --ease-fallback: cubic-bezier(0.22, 1, 0.36, 1);
+  --spring-ease: linear(
+    0,
+    0.04 3%,
+    0.24 8%,
+    0.72 18%,
+    1.03 28%,
+    1.04 35%,
+    0.99 52%,
+    1
+  );
+}
+
+/* Samsung One UI Deep Dark Mode */
+:root:has(> head > meta[name='color-scheme'][content='dark']) {
+  color-scheme: dark;
+
+  --bg-canvas: #0e1014;
+  --bg-panel: #1b1e24;
+  --bg-subtle: #252932;
+  --bg-elevated: #2e333e;
+  --bg-recessed: #15181d;
+  --bg-hud-scrim: rgba(27, 30, 36, 0.96);
+  --bg-video-chip: rgba(14, 16, 20, 0.9);
+  --text-video-chip: #f8fafc;
+
+  --border-hairline: rgba(255, 255, 255, 0.09);
+  --border-control: #64748b;
+  --border-strong: #94a3b8;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-on-solid: #0e1014;
+
+  --signal-emerald: #10b981;
+  --signal-emerald-hover: #34d399;
+  --bg-bin-emerald: #0e261e;
+
+  --signal-amber: #f59e0b;
+  --signal-amber-hover: #fbbf24;
+  --signal-amber-text: #fbbf24;
+  --bg-bin-amber: #261d0c;
+  --bg-pill-amber: #2e220b;
+
+  --signal-crimson: #f43f5e;
+  --signal-crimson-text: #fb7185;
+  --bg-bin-crimson: #271219;
+
+  --role-manager-text: #93c5fd;
+  --role-manager-bg: #172554;
+
+  --accent-primary: #f8fafc;
+  --accent-primary-hover: #e2e8f0;
+  --slider-track: #334155;
+  --slider-fill: #10b981;
+  --slider-thumb: #f8fafc;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --shadow-hud: 0 14px 32px rgba(0, 0, 0, 0.55);
+  --shadow-bottom-nav: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  --backdrop-dialog: rgba(0, 0, 0, 0.72);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:has(> head > meta[name='color-scheme'][content='light dark']) {
+    color-scheme: dark;
+
+    --bg-canvas: #0e1014;
+    --bg-panel: #1b1e24;
+    --bg-subtle: #252932;
+    --bg-elevated: #2e333e;
+    --bg-recessed: #15181d;
+    --bg-hud-scrim: rgba(27, 30, 36, 0.96);
+    --bg-video-chip: rgba(14, 16, 20, 0.9);
+    --text-video-chip: #f8fafc;
+
+    --border-hairline: rgba(255, 255, 255, 0.09);
+    --border-control: #64748b;
+    --border-strong: #94a3b8;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-on-solid: #0e1014;
+
+    --signal-emerald: #10b981;
+    --signal-emerald-hover: #34d399;
+    --bg-bin-emerald: #0e261e;
+
+    --signal-amber: #f59e0b;
+    --signal-amber-hover: #fbbf24;
+    --signal-amber-text: #fbbf24;
+    --bg-bin-amber: #261d0c;
+    --bg-pill-amber: #2e220b;
+
+    --signal-crimson: #f43f5e;
+    --signal-crimson-text: #fb7185;
+    --bg-bin-crimson: #271219;
+
+    --role-manager-text: #93c5fd;
+    --role-manager-bg: #172554;
+
+    --accent-primary: #f8fafc;
+    --accent-primary-hover: #e2e8f0;
+    --slider-track: #334155;
+    --slider-fill: #10b981;
+    --slider-thumb: #f8fafc;
+
+    --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+    --shadow-hud: 0 14px 32px rgba(0, 0, 0, 0.55);
+    --shadow-bottom-nav: 0 -4px 20px rgba(0, 0, 0, 0.5);
+    --backdrop-dialog: rgba(0, 0, 0, 0.72);
+  }
+}
+
+@media (pointer: coarse) {
+  :root {
+    --target-size: 44px;
+  }
+}

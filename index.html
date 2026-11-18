@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <script>
+      try {
+        var savedScheme = localStorage.getItem('sorta.colorScheme.v1');
+        if (savedScheme === 'dark' || savedScheme === 'light' || savedScheme === 'light dark') {
+          document.querySelector('meta[name="color-scheme"]').setAttribute('content', savedScheme);
+        }
+      } catch (e) {}
+    </script>
+    <meta name="theme-color" content="#F2F4F7" />
+    <meta
+      name="description"
+      content="SORTA: Smart Waste Kiosk dan Bank Sampah Digital berbasis smartphone dengan panduan 3 tong fisik dan timbangan IoT."
+    />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>SORTA | Kiosk Pemindai &amp; Bank Sampah Digital</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
